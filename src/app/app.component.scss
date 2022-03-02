@@ -1,0 +1,25 @@
+.card {
+  max-width: 400px;
+  cursor: pointer;
+  border: 1px solid rgb(224, 220, 220);
+}
+
+.cards-container {
+  display: flex;
+  margin: 50px;
+  gap: 50px;
+  justify-content: center;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.active-link {
+  border: 2.5px solid rgb(224, 220, 220);
+}

@@ -1,0 +1,22 @@
+<p>Products List</p>
+<mat-progress-spinner *ngIf="productsList == null"
+                      class="example-margin"
+                      color="red"
+                      mode="indeterminate">
+</mat-progress-spinner>
+<div *ngIf="productsList.length > 0">
+
+  <mat-card *ngFor="let product of productsList" class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>{{product.title}}</mat-card-title>
+      <mat-card-subtitle>{{product.price}}</mat-card-subtitle>
+      <img [src]="product.image" mat-card-sm-image>
+    </mat-card-title-group>
+    <mat-card-content>
+      {{product.category}}
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)="getProductDetails(product.id)" mat-button>Details</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

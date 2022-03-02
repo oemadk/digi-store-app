@@ -1,0 +1,10 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <!-- Select File -->
+  <!-- Assign Image Alt -->
+  <input formControlName="title" placeholder="Enter title">
+  <input formControlName="price" placeholder="Enter price">
+  <input formControlName="description" placeholder="Enter description">
+  <input formControlName="category" placeholder="Enter category">
+  <input type="file" formControlName="image">
+  <button type="submit">Submit</button>
+</form>
